@@ -65,6 +65,13 @@ img { max-width: 100%; }
 .steps__note { margin: 20px 0 0; font-size: .95rem; color: var(--color-text-muted); }
 .steps span { color: var(--color-text-muted); }
 
+/* 使い方ステップの画面写真（番号の分だけ左に寄せて、カード幅いっぱいに見せる） */
+.shot { margin: 18px 0 2px -46px; }
+.shot img { display: block; width: 100%; max-width: 340px; height: auto; margin-inline: auto;
+  background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.shot figcaption { margin-top: 10px; text-align: center; font-size: .85rem; line-height: 1.7;
+  color: var(--color-text-muted); }
+
 .not__lead { font-weight: 700; margin: 0 0 16px; }
 .not-list { margin: 0; padding-left: 1.2em; }
 .not-list li { margin-bottom: 8px; }
