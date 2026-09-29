@@ -116,3 +116,6 @@ textarea { min-height: 130px; }
   .sticky-bar .btn { flex: 0 0 240px; }
   .sticky-bar .btn--ghost { flex: 0 0 140px; }
 }
+
+.hero__title--sm { font-size: clamp(1.7rem, 6.5vw, 2.4rem); }
+.steps b.inline { display: inline; }

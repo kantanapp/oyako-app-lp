@@ -7,5 +7,6 @@ window.LEAD_CONFIG = {
   CASE_ID:         "oyako-app",
   CAPTCHA_SITEKEY: "0x4AAAAAAEF6AUXuRUngrNPU",
   GA4_ID:          "G-2EXJRN9380",
-  DEMO_URL:        "https://kantanapp.github.io/chiri-notes-demo/"
+  DEMO_URL:        "demo.html",                                   // LPのボタン → 解説ページ
+  DEMO_APP_URL:    "https://kantanapp.github.io/chiri-notes-demo/" // 解説ページのボタン → デモ本体
 };

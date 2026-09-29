@@ -10,7 +10,7 @@
   // ボタンのクリックを計測
   document.querySelectorAll('[data-cta]').forEach(function (el) {
     el.addEventListener('click', function () {
-      ga(el.classList.contains('js-demo') ? 'demo_open' : 'cta_click', { position: el.dataset.cta });
+      ga(el.classList.contains('js-demo') ? 'demo_guide_open' : 'cta_click', { position: el.dataset.cta });
     });
   });
 

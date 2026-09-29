@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>デモの使い方｜その子だけの勉強アプリ</title>
+  <meta name="description" content="プリントから作った勉強アプリのデモ版です。読む・テスト・答え合わせ・記録の使い方を説明します。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/lead-config.js"></script>
+  <script>
+    (function () { var id = (window.LEAD_CONFIG || {}).GA4_ID; if (!id) return;
+      var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date()); gtag('config', id); })();
+  </script>
+</head>
+<body>
+<main>
+
+  <section class="sec sec-hero" id="hero">
+    <div class="container">
+      <p class="hero__badge">デモ版の使い方</p>
+      <h1 class="hero__title hero__title--sm">プリントから作った、<br>勉強アプリのデモです。</h1>
+      <p class="hero__lead">中1の娘の地理の小テストのために作ったアプリを、中身だけ中学地理の一般的な内容に差し替えました。見た目と動きは、実物と同じです。</p>
+      <a class="btn btn--primary btn--lg js-demo-app" href="#" target="_blank" rel="noopener" data-cta="guide_top">デモを開く</a>
+      <p class="hero__note">スマホでそのまま使えます。登録は要りません。</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2 class="sec__title">使い方は、4つだけ</h2>
+      <ol class="steps">
+        <li><b>📖 読む</b><span>まず、単元を通して読みます。<b class="inline">太字</b>の言葉が、あとで穴埋めになるところです。</span></li>
+        <li><b>✏️ テスト</b><span>上の「テスト」に切り替えると、太字が空欄になります。空欄をタップして答えを入力。Enterで次の空欄へ進みます。</span></li>
+        <li><b>答え合わせ</b><span>下の「答え合わせ」を押すと、正解・まちがい・空欄の数が出ます。まちがえた問題をタップすると、その空欄に戻れます。</span></li>
+        <li><b>★ 記録</b><span>答え合わせのたびに、正答率がグラフに残ります。どこまで覚えたか、どこでまちがえたかを、子ども自身が確かめられます。</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2 class="sec__title">うちでは、こう使っています</h2>
+      <div class="story">
+        <p>読んで、覚えて、テストする。できていなければ、また読む。これを何度でも回します。</p>
+        <p>スマホで開けるので、空き時間にできます。記録は親子のどちらも見られるので、グラフを見ながら「ここまで来たね」「ここをもう一回やろう」と話せます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2 class="sec__title">試すときのヒント</h2>
+      <ul class="checks">
+        <li>わざと1問まちがえて、答え合わせしてみてください。見直しの流れが分かります</li>
+        <li>何回か答え合わせすると、記録のグラフが伸びていきます</li>
+        <li>入力と記録は、お使いの端末の中にだけ保存されます。どこにも送られません</li>
+      </ul>
+      <p style="margin-top:28px"><a class="btn btn--primary btn--lg js-demo-app" href="#" target="_blank" rel="noopener" data-cta="guide_bottom">デモを開く</a></p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <h2 class="sec__title">お子さんのプリントでも、作れます</h2>
+      <p>このアプリは、親御さん自身がAIと会話しながら作れます。作れるようになるまで、隣でお手伝いします。</p>
+      <p style="margin-top:24px"><a class="btn btn--primary btn--lg" href="./#contact" data-cta="guide_reserve">先行予約（無料）</a></p>
+      <p class="hero__note"><a href="./">← サービスの説明にもどる</a></p>
+    </div>
+  </section>
+
+</main>
+<footer class="footer"><div class="container"><p>運営：株式会社gen</p></div></footer>
+<script>
+(function () {
+  var CFG = window.LEAD_CONFIG || {};
+  document.querySelectorAll('.js-demo-app').forEach(function (a) { a.href = CFG.DEMO_APP_URL || '#'; });
+  document.querySelectorAll('[data-cta]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof window.gtag === 'function') window.gtag('event', el.classList.contains('js-demo-app') ? 'demo_open' : 'cta_click', { position: el.dataset.cta });
+    });
+  });
+})();
+</script>
+</body>
+</html>
